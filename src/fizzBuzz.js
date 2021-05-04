@@ -1,5 +1,5 @@
 class fizzBuzz {
-    isDivisibleByThree(number) {
-    return true;
+    _isDivisibleBy(number, divisor) {
+    return (number % divisor === 0);
   }
 }
