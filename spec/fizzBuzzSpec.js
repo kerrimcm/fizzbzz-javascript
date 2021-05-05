@@ -25,4 +25,14 @@ describe('FizzBuzz', function() {
       expect(fizzbuzz.play(10)).toEqual('Buzz');
     });
   });
+  describe('fizzbuzz', function() {
+    it('returns fizzbuzz when divisible by 3 and 5', function() {
+      expect(fizzbuzz.play(15)).toEqual('Fizzbuzz');
+    });
+  });
+  describe('numbers not divisible by 3 or 5', function() {
+    it('returns the numnber', function() {
+      expect(fizzbuzz.play(7)).toEqual(7);
+    });
+  });
 });

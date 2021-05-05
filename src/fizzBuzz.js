@@ -4,10 +4,15 @@ class fizzBuzz {
   }
 
   play(number) {
-    if(this._isDivisibleBy(number, 3)) {
+    if(this._isDivisibleBy(number, 15)) {
+      return 'Fizzbuzz';
+    } else if(this._isDivisibleBy(number, 3)) {
       return 'Fizz';
-    } else if(this._isDivisibleBy(number, 5)) {
+    }
+    else if(this._isDivisibleBy(number, 5)) {
       return 'Buzz';
+    } else {
+      return number;
     }
   }
 }
