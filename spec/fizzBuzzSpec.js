@@ -15,4 +15,14 @@ describe('FizzBuzz', function() {
       expect(fizzbuzz._isDivisibleBy(1, 3)).toBe(false);
     });
   });
+  describe('fizz', function() {
+    it('returns fizz when divisible by 3', function() {
+      expect(fizzbuzz.play(6)).toEqual('Fizz');
+    });
+  });
+  describe('buzz', function() {
+    it('returns buzz when divisible by 5', function() {
+      expect(fizzbuzz.play(10)).toEqual('Buzz');
+    });
+  });
 });
